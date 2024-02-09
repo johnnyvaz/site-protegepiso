@@ -15,5 +15,6 @@
   },
   "files.associations": {
     "*.mdoc": "markdown"
-  }
+  },
+  "frontMatter.dashboard.openOnStart": true
 }
