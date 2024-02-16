@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../layouts/page.astro
 title: Privacy
 description: Our policy regarding information collection and use

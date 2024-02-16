@@ -8,20 +8,21 @@ socialImage: ../../assets/undraw/undraw_mind_map.png
 categories:
   - information
 tags:
-  - mdx
-  - markmap
-  - diagram
-  - mindmap
+  - Marketing
+  - Criação
 ---
 
 ## Mindmap
 
-Sample mindmap diagram rendered by [markmap](https://markmap.js.org)
+### Titulo 
+
+Exemplo de utilização do markmap
+ [markmap](https://markmap.js.org)
 
 ```markmap
-# markmap
-- beautiful
-- useful
-- easy
-- interactive
+# Elo Corp
+- Estruturação
+- Criação
+- Campanhas
+- Operação
 ```

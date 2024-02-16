@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Sample Images post
 description: Test post with lightbox (using PhotoSwipe) on a set of images
 author: chris-tham
