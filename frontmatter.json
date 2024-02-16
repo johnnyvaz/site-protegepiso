@@ -59,5 +59,6 @@
         }
       ]
     }
-  ]
+  ],
+  "frontMatter.dashboard.openOnStart": true
 }
