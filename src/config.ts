@@ -32,9 +32,9 @@ export const SiteMetadata = {
   buildTime: new Date()
 }
 
-export { default as Logo } from './assets/svg/astro/astro-icon-dark.svg'
+export { default as Logo } from './assets/logo-protege/logo01.svg'
 export { default as LogoImage } from './assets/astro/astro-logo-dark.png'
-export { default as FeaturedSVG } from './assets/svg/undraw/undraw_design_inspiration.svg'
+export { default as FeaturedSVG } from './assets/svg/undraw/capa2.svg'
 export { default as DefaultSVG } from './assets/svg/undraw/undraw_my_feed.svg'
 export { default as DefaultImage } from './assets/undraw/undraw_my_feed.png'
 
