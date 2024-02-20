@@ -9,8 +9,8 @@ import socialImage from '../assets/undraw/undraw_contact_us.png'
 import { getCollection } from 'astro:content'
 
 const frontmatter = {
-  title: 'Contact',
-  description: 'Our presence is real and digital. Contact us through the following ways.',
+  title: 'Contato',
+  description: 'Você pode nos contatar de maneira rápida e fácil utilizando os canais de comunicação.',
   coverSVG: coverSVG,
   socialImage: socialImage,
   publishDate: SiteMetadata.buildTime
@@ -34,7 +34,7 @@ const social = await getCollection('social')
         <div class='flex flex-wrap items-start'>
           <div class='block w-full shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12'>
             <div class='w-full'>
-              <Map loc={SiteMetadata.latlng} zoom={11} />
+              <Map loc={SiteMetadata.latlng} zoom={15} />
             </div>
           </div>
           <div class='w-full shrink-0 grow-0 basis-auto lg:w-6/12 xl:w-8/12'>

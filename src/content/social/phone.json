@@ -1,5 +1,5 @@
 {
-  "name": "Phone",
-  "link": "tel:555-5555",
+  "name": "Whatsapp",
+  "link": "https://api.whatsapp.com/send?phone=551639113911",
   "icon": "telephone"
 }
