@@ -9,14 +9,14 @@ export interface TagType {
 }
 
 export const SiteMetadata = {
-  title: 'Hello Astro',
-  description: 'An Astro starter for corporate/marketing/blog websites.',
+  title: 'Site Protege Piso',
+  description: 'Site corpotativo da empresa protege piso.',
   author: {
-    name: 'Chris Tham',
-    twitter: '@chris1tham',
-    url: 'https://christham.net',
-    email: 'chris@christham.net',
-    summary: 'Outrageous actualiser.'
+    name: 'Protege Piso',
+    Instagram: '@protegepiso',
+    url: 'https://www.instagram.com/protegepiso ',
+    email: 'contato@protegepiso.com.br',
+    summary: 'Visite nossas redes sociais.'
   },
   org: {
     name: 'Hello Tham',
@@ -24,11 +24,11 @@ export const SiteMetadata = {
     url: 'https://hellotham.com',
     email: 'info@hellotham.com',
     summary:
-      'Hello Tham is a boutique management consulting firm. We specialise in Business and IT strategies, operating models, strategic roadmaps, enterprise architecture, analytics and business process design.'
+      'Somos a Protege Piso, uma empresa dedicada a fornecer soluções inovadoras e inteligentes para a proteção de pisos em ambientes de construção civil, reformas e obras. Com uma visão voltada para a excelência e a satisfação do cliente, destacamo-nos no mercado por nossa abordagem abrangente e pela qualidade incomparável de nossos produtos e serviços.'
   },
-  location: 'Rivendell, Middle Earth',
-  latlng: [-33.86785, 151.20732] as [number, number],
-  repository: 'https://github.com/hellotham/hello-astro',
+  location: ' Protege Piso, Edificio Spasse ,Número: 800, Sala:601, Ribeirão Preto-SP',
+  latlng: [-21.2016748, -47.796152] as [number, number],
+  repository: 'https://github.com/ProtegePiso',
   buildTime: new Date()
 }
 
@@ -39,11 +39,11 @@ export { default as DefaultSVG } from './assets/svg/undraw/undraw_my_feed.svg'
 export { default as DefaultImage } from './assets/undraw/undraw_my_feed.png'
 
 export const NavigationLinks = [
-  { name: 'Home', href: '' },
-  { name: 'About', href: 'about' },
-  { name: 'Contact', href: 'contact' },
+  { name: 'Página Inicial', href: '' },
+  { name: 'Sobre Nós', href: 'about' },
+  { name: 'Contatos', href: 'contact' },
   { name: 'Blog', href: 'blog' },
-  { name: 'Docs', href: 'doc/introduction' }
+  { name: 'Franquia', href: 'doc/introduction' }
 ]
 
 export const PAGE_SIZE = 6
