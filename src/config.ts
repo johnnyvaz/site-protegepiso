@@ -19,10 +19,10 @@ export const SiteMetadata = {
     summary: 'Visite nossas redes sociais.'
   },
   org: {
-    name: 'Hello Tham',
-    twitter: '@hellothamcom',
-    url: 'https://hellotham.com',
-    email: 'info@hellotham.com',
+    name: 'Protege Piso',
+    twitter: '@protegepiso',
+    url: 'https://protegepiso.com.br',
+    email: 'contato@protegepiso.com.br',
     summary:
       'Somos a Protege Piso, uma empresa dedicada a fornecer soluções inovadoras e inteligentes para a proteção de pisos em ambientes de construção civil, reformas e obras. Com uma visão voltada para a excelência e a satisfação do cliente, destacamo-nos no mercado por nossa abordagem abrangente e pela qualidade incomparável de nossos produtos e serviços.'
   },
@@ -40,15 +40,15 @@ export { default as DefaultImage } from './assets/undraw/undraw_my_feed.png'
 
 export const NavigationLinks = [
   { name: 'Página Inicial', href: '' },
-  { name: 'Sobre Nós', href: 'about' },
-  { name: 'Contatos', href: 'contact' },
-  { name: 'Blog', href: 'blog' },
-  { name: 'Franquia', href: 'doc/introduction' }
+  { name: 'Sobre Nós', href: 'sobre' },
+  { name: 'Contatos', href: 'contato' },
+  // { name: 'Blog', href: 'blog' },
+  // { name: 'Franquia', href: 'doc/introduction' }
 ]
 
 export const PAGE_SIZE = 6
 
-export const GITHUB_EDIT_URL = `https://github.com/hellotham/hello-astro`
+export const GITHUB_EDIT_URL = `https://github.com/johnnyvaz/site-protegepiso`
 
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
