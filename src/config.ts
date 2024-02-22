@@ -34,7 +34,7 @@ export const SiteMetadata = {
 
 export { default as Logo } from './assets/logo-protege/logo01.svg'
 export { default as LogoImage } from './assets/astro/astro-logo-dark.png'
-export { default as FeaturedSVG } from './assets/svg/undraw/capa1.svg'
+export { default as FeaturedSVG } from './assets/capa-protege/principal.png'
 export { default as DefaultSVG } from './assets/svg/undraw/undraw_my_feed.svg'
 export { default as DefaultImage } from './assets/undraw/undraw_my_feed.png'
 
