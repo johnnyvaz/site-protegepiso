@@ -4,19 +4,22 @@ layout: ../layouts/page.astro
 title: Sobre a Protege Piso
 description: Proteção Eficiente para o Seu Piso
 publishDate: '2023-06-13T00:00:00.000Z' 
-coverSVG: ../assets/svg/undraw/undraw_about_me.svg
+coverSVG: ../assets/capa-protege/capa-contatos.svg
 socialImage: ../assets/undraw/undraw_about_me.png
 ---
 
 <!-- ![capa](../assets/capa/topo-folder.jpg) -->
 
 ## A Protege Piso
+<div style="text-align: justify">
+
 É uma empresa inovadora dedicada a fornecer soluções de proteção de pisos altamente eficazes para uma variedade de necessidades na construção civil e empreendimentos imobiliários.  
 Com um compromisso inflexível com a qualidade, durabilidade e praticidade, nossa empresa se destaca como líder no setor, oferecendo produtos e serviços que atendem às demandas mais exigentes de nossos clientes.  
 Nossa linha de produtos é o resultado de anos de pesquisa, desenvolvimento e aprimoramento contínuo, garantindo que cada solução oferecida pela Protege Piso seja da mais alta qualidade e atenda aos mais altos padrões de desempenho.  
 Nosso sistema de proteção de pisos é especialmente projetado para resistir a impactos, abrasão e condições climáticas adversas, proporcionando uma camada robusta de defesa para qualquer piso, desde canteiros de obras até ambientes industriais.
+</div>
 
-### Missão, Visão e Valores
+## Missão, Visão e Valores
 - Tecnologia e Inovação
 - Compromisso com a Qualidade:
 - Responsabilidade Social e Ambiental
