@@ -8,10 +8,16 @@ coverSVG: ../assets/capa-protege/capa-contatos.svg
 socialImage: ../assets/undraw/undraw_about_me.png
 ---
 
+<style>
+  .imagen-redonda {
+    border-radius: 50%;
+  }
+</style>
+
 <main class="container mx-auto p-4">
   <!-- Seção Resistência -->
   <section class="section mb-2">
-    <div class="flex flex-col lg:flex-row items-center">
+    <div class="flex flex-col lg:flex-row items-center bg-gray-100">
       <!-- Texto -->
       <div class="p-4 lg:w-1/2">
         <h2 class="text-3xl font-bold mb-2 text-green-900 dark:text-green-500">Resistência</h2>
@@ -22,7 +28,7 @@ socialImage: ../assets/undraw/undraw_about_me.png
       </div>
       <!-- Imagem -->
       <div class="p-4 lg:w-1/2">
-        <img src="../assets/capa-protege/pintor.png" alt="pintor" class="max-h-80 lg:max-h-full object-cover rounded-lg">
+        <img src="src/assets/capa-protege/pintor.png" alt="pintor" class="max-h-80 lg:max-h-full object-cover rounded-lg">
       </div>
     </div>
   </section>
@@ -37,8 +43,8 @@ socialImage: ../assets/undraw/undraw_about_me.png
   </section>
 
   <!-- Seção Sistema de locação por m² -->
-  <section class="section mb-2">
-    <div class="p-4">
+  <section class="section mb-2 bg-gray-100">
+    <div class="p-4 bg-gray">
       <h3 class="text-2xl font-bold mb-2 text-green-900 dark:text-green-500">Sistema de locação por m²</h3>
       <p class="text-lg text-black dark:text-gray-300 mb-2">O sistema de proteção é alugado. Mais economia para sua obra e sustentabilidade ambiental.</p>
     </div>
@@ -53,19 +59,19 @@ socialImage: ../assets/undraw/undraw_about_me.png
   </section>
 
   <!-- Seção com imagens redondas -->
-  <section class="section mb-3">
-    <div class="flex justify-center">
+  <section class="section mb-3 ">
+    <div class="flex justify-center ">
       <!-- Imagem 1 -->
-      <div class="contenedor-imagen">
-        <img src="../assets/cards/card03.png" alt="Imagem 1" class="imagen-redonda">
+      <div class="contenedor-imagen mx-4">
+        <img src="src/assets/cards/card03.png" alt="Imagem 1" class="imagen-redonda" style="margin-right: 10px;">
       </div>
       <!-- Imagem 2 -->
-      <div class="contenedor-imagen">
-        <img src="../assets/cards/card06.png" alt="Imagem 2" class="imagen-redonda">
+      <div class="contenedor-imagen mx-4">
+        <img src="src/assets/cards/card06.png" alt="Imagem 2" class="imagen-redonda" style="margin-right: 10px;">
       </div>
       <!-- Imagem 3 -->
-      <div class="contenedor-imagen">
-        <img src="../assets/cards/card05.png" alt="Imagem 3" class="imagen-redonda">
+      <div class="contenedor-imagen mx-4">
+        <img src="src/assets/cards/card02.png" alt="Imagem 3" class="imagen-redonda">
       </div>
     </div>
   </section>
@@ -95,15 +101,15 @@ socialImage: ../assets/undraw/undraw_about_me.png
 
   <!-- Seção Produto e Designer -->
   <section class="section mb-2">
-    <div class="flex flex-col lg:flex-row items-center">
+    <div class="flex flex-col lg:flex-row items-center lg:items-start">
       <!-- Texto -->
       <div class="p-4 lg:w-1/2">
-        <h2 class="text-3xl font-bold mb-4 text-green-900 dark:text-green-500">O Produto</h2>
+        <h2 class="text-3xl font-bold mb-2 text-green-900 dark:text-green-500">O Produto</h2>
         <p class="text-lg text-black dark:text-gray-300 mb-2 bg-white-500 p-4 rounded-md">O Protege Piso é um sistema inovador de placas flexíveis compostas de materiais de alta resistência e 100% reciclados.</p>
       </div>
       <!-- Aside -->
       <div class="p-4 lg:w-1/2">
-        <h2 class="text-3xl font-bold mb-4 text-green-900 dark:text-green-500">O Designer</h2>
+        <h2 class="text-3xl font-bold mb-2 text-green-900 dark:text-green-500">O Designer</h2>
         <p class="text-lg text-black dark:text-gray-300 mb-2 bg-white-500 p-4 rounded-md">O design das placas foi projetado para gerar proteção completa e profissional para seu piso em qualquer condição. Instalação intuitiva, sulcos que drenam umidade e baixos relevos que retém resíduos.</p>
         <p class="text-lg text-black dark:text-gray-300 mb-2 bg-white-500 p-4 rounded-md">Desenho aerodinâmico e peso da placa, garantem a fixação sem uso de adesivos.</p>
       </div>
@@ -114,16 +120,16 @@ socialImage: ../assets/undraw/undraw_about_me.png
   <section class="section mb-3">
     <div class="flex justify-center">
       <!-- Imagem 1 -->
-      <div class="contenedor-imagen">
-        <img src="../assets/selos/protepiso.png" alt="peça de proteção de piso" class="imagen-quadrada">
+      <div class="contenedor-imagen mx-4">
+        <img src="src/assets/selos/protepiso.png" alt="Peça de Proteção de Piso" class="imagen-quadrada" style="width: 200px; height: 200px;">
       </div>
       <!-- Imagem 2 -->
-      <div class="contenedor-imagen">
-        <img src="../assets/selos/selobr.png" alt="Selo Br" class="imagen-quadrada">
-      </div> 
+      <div class="contenedor-imagen mx-4">
+        <img src="src/assets/selos/selobr.png" alt="Selo BR" class="imagen-quadrada" style="width: 200px; height: 200px;">
+      </div>
       <!-- Imagem 3 -->
-      <div class="contenedor-imagen">
-        <img src="../assets/selos/selo-vencedor.png" alt="selo prêmio designer" class="imagen-quadrada">
+      <div class="contenedor-imagen mx-4">
+        <img src="src/assets/selos/selo-vencedor.png" alt="Selo Prêmio Designer" class="imagen-quadrada" style="width: 200px; height: 200px;">
       </div>
     </div>
   </section>
@@ -131,7 +137,7 @@ socialImage: ../assets/undraw/undraw_about_me.png
 
 <div class="flex justify-center items-center bg-green-500 text-white py-8">
   <div class="text-center">
-    <h2 class="text-2xl font-medium mb-4 text-white">Descubra as vantagens e benefícios de ser um parceiro Protege Piso em sua região.</h2>
+    <h2 class="text-2xl font-medium mb-4">Descubra as vantagens e benefícios de ser um parceiro Protege Piso em sua região.</h2>
     <p class="text-lg">Entre em contato conosco e descubra uma grande oportunidade de negócio.</p>
   </div>
 </div>
