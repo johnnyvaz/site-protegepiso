@@ -141,5 +141,3 @@ socialImage: ../assets/undraw/undraw_about_me.png
     <p class="text-lg">Entre em contato conosco e descubra uma grande oportunidade de negócio.</p>
   </div>
 </div>
-
-
