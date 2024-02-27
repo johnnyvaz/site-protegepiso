@@ -59,22 +59,22 @@ socialImage: ../assets/undraw/undraw_about_me.png
   </section>
 
   <!-- Seção com imagens redondas -->
-  <section class="section mb-3 ">
-    <div class="flex justify-center ">
-      <!-- Imagem 1 -->
-      <div class="contenedor-imagen mx-4">
-        <img src="src/assets/cards/card03.png" alt="Imagem 1" class="imagen-redonda" style="margin-right: 10px;">
-      </div>
-      <!-- Imagem 2 -->
-      <div class="contenedor-imagen mx-4">
-        <img src="src/assets/cards/card06.png" alt="Imagem 2" class="imagen-redonda" style="margin-right: 10px;">
-      </div>
-      <!-- Imagem 3 -->
-      <div class="contenedor-imagen mx-4">
-        <img src="src/assets/cards/card02.png" alt="Imagem 3" class="imagen-redonda">
-      </div>
+<section class="section mb-3">
+  <div class="flex justify-center">
+    <!-- Imagem 1 -->
+    <div class="contenedor-imagen mx-4">
+      <img src="src/assets/cards/card03.svg" alt="Imagem 1" class="imagen-redonda" style="margin-right: 10px;">
     </div>
-  </section>
+    <!-- Imagem 2 -->
+    <div class="contenedor-imagen mx-4">
+      <img src="src/assets/cards/card06.svg" alt="Imagem 2" class="imagen-redonda" style="margin-right: 10px;">
+    </div>
+    <!-- Imagem 3 -->
+    <div class="contenedor-imagen mx-4">
+      <img src="src/assets/cards/card02.svg" alt="Imagem 3" class="imagen-redonda">
+    </div>
+  </div>
+</section>
 
   <!-- Seção Novidades -->
   <section class="section mb-2">
@@ -89,7 +89,6 @@ socialImage: ../assets/undraw/undraw_about_me.png
           <li>Metais;</li>
           <li>Banheiras;</li>
           <li>Móveis;</li>
-          <li>15 anos de experiência.</li>
         </ul>
       </div>
       <!-- Aside -->
