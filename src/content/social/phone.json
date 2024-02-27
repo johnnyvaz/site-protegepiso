@@ -1,5 +1,6 @@
 {
   "name": "Whatsapp",
-  "link": "https://api.whatsapp.com/send?phone=551639113911",
-  "icon": "telephone"
+  "service": "whatsapp",
+  "icon": "telephone",
+  "link": "https://api.whatsapp.com/send?phone=551639113911"
 }
