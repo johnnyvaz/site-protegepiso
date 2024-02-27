@@ -109,7 +109,7 @@ socialImage: ../assets/undraw/undraw_about_me.png
       </div>
       <!-- Aside -->
       <div class="p-4 lg:w-1/2">
-        <h2 class="text-3xl font-bold mb-2 text-green-900 dark:text-green-500">O Designer</h2>
+        <h2 class="text-3xl font-bold mb-2 text-green-900 dark:text-green-500">Designer</h2>
         <p class="text-lg text-black dark:text-gray-300 mb-2 bg-white-500 p-4 rounded-md">O design das placas foi projetado para gerar proteção completa e profissional para seu piso em qualquer condição. Instalação intuitiva, sulcos que drenam umidade e baixos relevos que retém resíduos.</p>
         <p class="text-lg text-black dark:text-gray-300 mb-2 bg-white-500 p-4 rounded-md">Desenho aerodinâmico e peso da placa, garantem a fixação sem uso de adesivos.</p>
       </div>
