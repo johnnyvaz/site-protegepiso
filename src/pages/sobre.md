@@ -63,15 +63,15 @@ socialImage: ../assets/undraw/undraw_about_me.png
   <div class="flex justify-center">
     <!-- Imagem 1 -->
     <div class="contenedor-imagen mx-4">
-      <img src="src/assets/cards/card03.svg" alt="Imagem 1" class="imagen-redonda" style="margin-right: 10px;">
+      <img src="src/assets/cards/foto03.png" alt="Imagem 1" class="imagen-redonda" style="margin-right: 10px;">
     </div>
     <!-- Imagem 2 -->
     <div class="contenedor-imagen mx-4">
-      <img src="src/assets/cards/card06.svg" alt="Imagem 2" class="imagen-redonda" style="margin-right: 10px;">
+      <img src="src/assets/cards/foto01.png" alt="Imagem 2" class="imagen-redonda" style="margin-right: 10px;">
     </div>
     <!-- Imagem 3 -->
     <div class="contenedor-imagen mx-4">
-      <img src="src/assets/cards/card02.svg" alt="Imagem 3" class="imagen-redonda">
+      <img src="src/assets/cards/foto02.png" alt="Imagem 3" class="imagen-redonda" style="margin-right: 10px;">
     </div>
   </div>
 </section>
@@ -93,8 +93,8 @@ socialImage: ../assets/undraw/undraw_about_me.png
       </div>
       <!-- Aside -->
       <aside class="p-4 lg:w-1/2 bg-green-500 text-white">
-        <p class="text-xl">Protegemos e mantemos seu piso protegido, um compromisso com o resultado. Antecipe o cronograma da sua obra e deixe a proteção de seu piso conosco!</p>
-      </aside>
+  <p class="text-3xl">Protegemos e mantemos seu piso protegido, um compromisso com o resultado. Antecipe o cronograma da sua obra e deixe a proteção de seu piso conosco!</p>
+</aside>
     </div>
   </section>
 
@@ -116,22 +116,22 @@ socialImage: ../assets/undraw/undraw_about_me.png
   </section>
 
   <!-- Seção com imagens pequenas e quadradas -->
-  <section class="section mb-3">
-    <div class="flex justify-center">
-      <!-- Imagem 1 -->
-      <div class="contenedor-imagen mx-4">
-        <img src="src/assets/selos/protepiso.png" alt="Peça de Proteção de Piso" class="imagen-quadrada" style="width: 200px; height: 200px;">
-      </div>
-      <!-- Imagem 2 -->
-      <div class="contenedor-imagen mx-4">
-        <img src="src/assets/selos/selobr.png" alt="Selo BR" class="imagen-quadrada" style="width: 200px; height: 200px;">
-      </div>
-      <!-- Imagem 3 -->
-      <div class="contenedor-imagen mx-4">
-        <img src="src/assets/selos/selo-vencedor.png" alt="Selo Prêmio Designer" class="imagen-quadrada" style="width: 200px; height: 200px;">
-      </div>
+<section class="section mb-3">
+  <div class="flex justify-center">
+    <!-- Imagem 1 -->
+    <div class="contenedor-imagen mx-4">
+      <img src="src/assets/selos/protepiso.png" alt="Peça de Proteção de Piso" class="imagen-quadrada" style="max-width: 200px; max-height: 200px;">
     </div>
-  </section>
+    <!-- Imagem 2 -->
+    <div class="contenedor-imagen mx-4">
+      <img src="src/assets/selos/selobr.png" alt="Selo BR" class="imagen-quadrada" style="max-width: 200px; max-height: 200px;">
+    </div>
+    <!-- Imagem 3 -->
+    <div class="contenedor-imagen mx-4">
+      <img src="src/assets/selos/selo-vencedor.png" alt="Selo Prêmio Designer" class="imagen-quadrada" style="max-width: 200px; max-height: 200px;">
+    </div>
+  </div>
+</section>
 </main>
 
 <div class="flex justify-center items-center bg-green-500 text-white py-8">
