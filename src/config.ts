@@ -28,7 +28,7 @@ export const SiteMetadata = {
   },
   location: ' Protege Piso, Edificio Spasse ,Número: 800, Sala:601, Ribeirão Preto-SP',
   latlng: [-21.2016748, -47.796152] as [number, number],
-  repository: 'https://github.com/ProtegePiso',
+  //repository: 'https://github.com/ProtegePiso',
   buildTime: new Date()
 }
 
@@ -48,7 +48,7 @@ export const NavigationLinks = [
 
 export const PAGE_SIZE = 6
 
-export const GITHUB_EDIT_URL = `https://github.com/johnnyvaz/site-protegepiso`
+//export const GITHUB_EDIT_URL = `https://github.com/johnnyvaz/site-protegepiso`
 
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
