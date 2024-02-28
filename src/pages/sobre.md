@@ -28,7 +28,7 @@ socialImage: ../assets/undraw/undraw_about_me.png
       </div>
       <!-- Imagem -->
       <div class="p-4 lg:w-1/2">
-        <img src="src/assets/capa-protege/pintor.png" alt="pintor" class="max-h-80 lg:max-h-full object-cover rounded-lg">
+        <img src="src/assets/capa-protege/pintor.png" alt="pintor" class="max-h-40 lg:max-h-full object-cover rounded-lg">
       </div>
     </div>
   </section>
