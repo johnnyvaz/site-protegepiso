@@ -1,5 +1,6 @@
 ---
 import { SiteMetadata } from '../config'
+import card01 from 'src/assets/cards/card01.png'
 ---
 
 
@@ -17,9 +18,9 @@ import { SiteMetadata } from '../config'
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
       <!-- Imagens -->
       <div class="col-span-1">
-        <a href="src/assets/cards/card01.png">
+        <a href={card01.src}>
           <div class="rounded-lg overflow-hidden shadow-lg">
-            <img src="src/assets/cards/card01.svg" alt="Construction Step 1" class="w-full h-auto object-contain">
+            <img src={card01.src} alt="Construction Step 1" class="w-full h-auto object-contain">
           </div>
         </a>
       </div>
