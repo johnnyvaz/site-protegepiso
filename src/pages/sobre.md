@@ -28,7 +28,7 @@ socialImage: ../assets/undraw/undraw_about_me.png
       </div>
       <!-- Imagem -->
       <div class="p-4 lg:w-1/2">
-        <img src="src/assets/capa-protege/pintor.png" alt="pintor" class="max-h-80 lg:max-h-full object-cover rounded-lg">
+        <img src="src/assets/capa-protege/pintor.png" alt="pintor" class="max-h-40 lg:max-h-full object-cover rounded-lg">
       </div>
     </div>
   </section>
@@ -137,6 +137,7 @@ socialImage: ../assets/undraw/undraw_about_me.png
 <div class="flex justify-center items-center bg-green-500 text-white py-8">
   <div class="text-center">
     <h2 class="text-2xl font-medium mb-4">Descubra as vantagens e benefícios de ser <br> um parceiro Protege Piso em sua região.</h2>
-    <p class="text-lg">Entre em contato conosco e descubra uma grande oportunidade de negócio.</p>
+    <p class="text-lg"><strong><a href="https://api.whatsapp.com/send?phone=551639113911" target="_blank" class="text-green-600 dark:text-blue-500">Entre em contato</a></strong> conosco e descubra uma grande oportunidade de negócio.</p>
   </div>
 </div>
+
