@@ -1,5 +1,4 @@
 ---
-import { getCollection } from 'astro:content'
 import type { Frontmatter } from '../config'
 import { SiteMetadata } from '../config'
 import Base from '../layouts/base.astro'
@@ -9,6 +8,7 @@ import CTA from '../components/cta.astro'
 import coverSVG from '../assets/svg/undraw/undraw_design_inspiration.svg'
 import socialImage from '../assets/undraw/undraw_design_inspiration.png'
 import Payuse from '../components/payuse.astro'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 
 const frontmatter: Frontmatter = {
@@ -27,5 +27,15 @@ const frontmatter: Frontmatter = {
   <!-- <LatestArticles posts={latestPosts} /> -->
   <CTA />
   <Payuse />
+
+    <FloatingWhatsApp
+      phoneNumber="551639113911"
+      accountName="Atendimento"
+      allowEsc
+      allowClickAway
+      notification
+      notificationSound
+    />
+
   
 </Base>
