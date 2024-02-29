@@ -14,10 +14,10 @@ tags:
 
 ## Mindmap
 
-### Titulo 
+### Titulo
 
 Exemplo de utilização do markmap
- [markmap](https://markmap.js.org)
+[markmap](https://markmap.js.org)
 
 ```markmap
 # Elo Corp

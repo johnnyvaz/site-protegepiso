@@ -3,7 +3,7 @@ draft: true
 layout: ../layouts/page.astro
 title: Sobre a Protege Piso
 description: Proteção Eficiente para o Seu Piso
-publishDate: '2023-06-13T00:00:00.000Z' 
+publishDate: '2023-06-13T00:00:00.000Z'
 coverSVG: ../assets/capa-protege/capa.svg
 socialImage: ../assets/undraw/undraw_about_me.png
 ---
@@ -140,4 +140,3 @@ socialImage: ../assets/undraw/undraw_about_me.png
     <p class="text-lg"><strong><a href="https://api.whatsapp.com/send?phone=551639113911" target="_blank" class="text-green-600 dark:text-blue-500">Entre em contato</a></strong> conosco e descubra uma grande oportunidade de negócio.</p>
   </div>
 </div>
-
