@@ -10,7 +10,7 @@ import rehypeKatex from 'rehype-katex';
 import remarkPlantUML from '@akebifiky/remark-simple-plantuml';
 import { remarkReadingTime } from './remark-plugins/remark-reading-time.mjs';
 import { remarkDiagram } from './remark-plugins/remark-diagram.mjs';
-import react from '@astrojs/react';
+
 
 import markdoc from "@astrojs/markdoc";
 
@@ -24,7 +24,7 @@ export default defineConfig({
   },
   site: 'https://protegepiso.com.br',
   base: '/',
-  integrations: [tailwind(), sitemap(), mdx(), alpinejs(), robotsTxt(), markdoc(), react()],
+  integrations: [tailwind(), sitemap(), mdx(), alpinejs(), robotsTxt(), markdoc()],
   markdown: {
     extendDefaultPlugins: true,
     remarkPlugins: [remarkReadingTime, remarkMath, remarkPlantUML, remarkDiagram, remarkEmoji],
