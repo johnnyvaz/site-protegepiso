@@ -39,11 +39,11 @@ export { default as DefaultSVG } from './assets/svg/undraw/undraw_my_feed.svg'
 export { default as DefaultImage } from './assets/undraw/undraw_my_feed.png'
 
 export const NavigationLinks = [
-  { name: 'Home', href: '/' },
+  { name: 'Home', href: '' },
   { name: 'Sobre Nós', href: 'sobre' },
   { name: 'Blog', href: 'blog' },
-  { name: 'Contatos', href: 'contato' }
- // { name: 'ketzim', href: 'ketzim.astro' },
+  { name: 'Contatos', href: 'contato' },
+ { name: 'Ketzim IA', href: 'ketzim' },
   // { name: 'Franquia', href: 'doc/introduction' }
 ]
 
