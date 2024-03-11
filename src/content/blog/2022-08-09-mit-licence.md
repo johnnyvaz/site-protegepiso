@@ -2,7 +2,7 @@
 draft: true
 title: MIT Licence
 description: The MIT License, explained.
-author: chris-tham
+author: johnny
 publishDate: 2022-08-09T00:00:00.000Z
 coverSVG: ../../assets/svg/undraw/undraw_open_source.svg
 socialImage: ../../assets/undraw/undraw_open_source.png

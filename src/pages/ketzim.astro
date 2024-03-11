@@ -1,0 +1,29 @@
+---
+import type { Frontmatter } from '../config'
+import { SiteMetadata } from '../config'
+import Base from '../layouts/base.astro'
+import PageHero from '../components/pagehero.astro'
+import coverSVG from '../assets/svg/undraw/undraw_project_complete_lwss.svg'
+import socialImage from '../assets/undraw/undraw_page_not_found.png'
+import Ketzimia from '../components/ketzimia.astro'
+
+const frontmatter: Frontmatter = {
+  title: 'Ketzim',
+  description: "sistema de IA",
+  coverSVG: coverSVG,
+  socialImage: socialImage,
+  publishDate: SiteMetadata.buildTime
+}
+---
+
+<Base frontmatter={frontmatter}>
+  <header>
+    <PageHero
+      title={frontmatter.title}
+      description={frontmatter.description}
+      coverSVG={frontmatter.coverSVG}
+      socialImage={frontmatter.socialImage}
+    />
+  </header>
+  <Ketzimia />
+</Base>
