@@ -1,5 +1,7 @@
 ---
 import { FeaturedSVG } from '../config'
+import fotopiso from '../assets/cards/foto-piso.svg'
+import payuse from '../assets/capa-protege/payuse.svg'
 ---
 
 <div class='bg-grey-100 relative overflow-hidden dark:bg-gray-900'>
@@ -70,7 +72,7 @@ import { FeaturedSVG } from '../config'
   <div class='mx-auto flex max-w-7xl items-center px-4 sm:px-6 lg:px-8'>
     <div class='lg:w-1/2 lg:pr-8'>
       <img
-        src='src/assets/cards/foto-piso.svg'
+        src={fotopiso.src}
         alt='Imagem card piso protegido'
         class='w-full rounded-lg shadow-lg'
       />
@@ -107,6 +109,6 @@ import { FeaturedSVG } from '../config'
     <span class='block dark:text-white'>DIFERENCIAIS DA PROTEÇÃO PARA PISO</span>
   </h2>
   <div class='mx-auto flex max-w-2xl justify-center overflow-hidden rounded-lg shadow-lg'>
-    <img src='../src/assets/capa-protege/payuse.svg' alt='Pay use' class='h-auto w-full' />
+    <img src={payuse.src} alt='Pay use' class='h-auto w-full' />
   </div>
 </div>
