@@ -8,6 +8,7 @@ import CTA from '../components/cta.astro'
 import coverSVG from '../assets/svg/undraw/undraw_design_inspiration.svg'
 import socialImage from '../assets/undraw/undraw_design_inspiration.png'
 import Payuse from '../components/payuse.astro'
+import FindOutMore from '../components/findoutmore.astro'
 
 const frontmatter: Frontmatter = {
   title: SiteMetadata.title,
@@ -20,11 +21,10 @@ const frontmatter: Frontmatter = {
 
 <Base frontmatter={frontmatter}>
   <Hero />
-  <Features />
+  <Features /> 
   
   <!-- <FindOutMore /> -->
   <!-- <LatestArticles posts={latestPosts} /> -->
   <CTA />
   <Payuse />
-  <!-- <Formbricks /> -->
 </Base>
