@@ -67,7 +67,7 @@ const { frontmatter } = Astro.props
     }
     <slot name='in-head' />
   </head>
-  <body class='dark:bg-gray-900'>
+  <body class='dark:bg-gray-900 mx-auto px-4 max-w-screen-lg'>
     <Header />
     <slot />
     {frontmatter.gallery && <Gallery folder={frontmatter.gallery} />}
