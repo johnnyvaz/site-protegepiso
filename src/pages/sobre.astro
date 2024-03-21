@@ -3,13 +3,13 @@ import type { Frontmatter } from '../config'
 import { SiteMetadata } from '../config'
 import Base from '../layouts/base.astro'
 import PageHero from '../components/pagehero.astro'
-import coverSVG from '../assets/undraw/capa-ketzim.svg'
+import coverSVG from '../assets/capa-protege/capa-sobre.svg'
 import socialImage from '../assets/undraw/undraw_page_not_found.png'
-import Ketzimia from '../components/ketzimia.astro'
+import Sobrenos from '../components/sobre.astro'
 
 const frontmatter: Frontmatter = {
-  title: 'Ketzim IA',
-  description: 'A Inteligência Artificial da Elo Protection e Protege Piso',
+  title: 'Sobre nós',
+  description: '',
   coverSVG: coverSVG,
   socialImage: socialImage,
   publishDate: SiteMetadata.buildTime
@@ -25,5 +25,5 @@ const frontmatter: Frontmatter = {
       socialImage={frontmatter.socialImage}
     />
   </header>
-  <Ketzimia />
+  <Sobrenos />
 </Base>
