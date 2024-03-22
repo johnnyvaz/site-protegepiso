@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon'
+import elo from '../assets/capa-protege/elo.png'
 
 const features = [
   {
@@ -33,16 +34,16 @@ const features = [
   <div class='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
     <div class='lg:text-center'>
       <p
-        class='mt-2 text-3xl font-extrabold leading-8 tracking-tight text-green-900 sm:text-4xl dark:text-gray-100'
+        class='mt-2 text-3xl font-extrabold leading-8 tracking-tight text-green-900 dark:text-gray-100 sm:text-4xl'
       >
         INOVADOR E INTELIGENTE
       </p>
-      <p class='text-black-600 mt-4 max-w-xl text-sm font-extrabold lg:mx-auto dark:text-gray-300'>
+      <p class='text-black-600 mt-4 max-w-xl text-sm font-extrabold dark:text-gray-300 lg:mx-auto'>
         Desenvolvidos com base em tecnologia avançada e um profundo conhecimento das necessidades
         dos clientes na área da construção civil e reformas.
       </p>
     </div>
-  
+  </div>
   <div class='mt-10'>
     <dl class='space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0'>
       {
@@ -74,23 +75,44 @@ const features = [
 <!-- Título do vídeo -->
 <div class='rounded-lg bg-gray-50 p-5 shadow-lg dark:bg-black'>
   <h2
-    class='mb-8 text-center text-4xl font-extrabold tracking-tight text-green-900 sm:text-4xl dark:text-gray-300'
+    class='mb-8 text-center text-4xl font-extrabold tracking-tight text-green-900 dark:text-gray-300 sm:text-4xl'
   >
     <span class='block dark:text-white'>VÍDEO INSTITUCIONAL</span>
   </h2>
 </div>
 
-<!-- Vídeo -->
-<div class='mx-auto mb-8 max-w-screen-md text-center'>
+<div class='texte-center mx-auto mb-8 max-w-screen-md'>
   <div class='flex justify-center'>
-    <div class='p-4'>
-      <iframe
-      width='850'
-      height='515'
-        src='https://www.youtube.com/embed/6VydtOBK_qQ?si=bWiPzBWeGPkllBZC&start=5'
-        title='YouTube video player'
-        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-        allowfullscreen></iframe>
+    <img src='' alt='' />
+  </div>
+</div>
+<!-- Vídeo -->
+<div class='relative mx-auto mb-8 max-w-screen-md text-center'>
+  <div class='flex justify-center'>
+    <div class='relative p-4'>
+      <img
+        src={elo.src}
+        alt='Descrição da imagem'
+        width='100%'
+        class='rounded-lg'
+      />
+      <a
+        href='https://www.youtube.com/embed/6VydtOBK_qQ?si=bWiPzBWeGPkllBZC&start=5'
+        target='_blank'
+        rel='noopener noreferrer'
+        class='absolute inset-0 flex items-center justify-center'
+      >
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          class='h-20 w-20 text-red-600 opacity-70 transition-opacity duration-300 hover:opacity-100'
+          fill='none'
+          viewBox='0 0 24 24'
+          stroke='currentColor'
+        >
+          <path stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='M8 5v14l11-7z'
+          ></path>
+        </svg>
+      </a>
     </div>
   </div>
 </div>
