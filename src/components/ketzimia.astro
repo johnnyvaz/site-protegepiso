@@ -28,6 +28,7 @@ import coverSVG from '../assets/undraw/capa-ketzim.svg'
         id='modalVideo'
         class='absolute inset-0 h-full w-full'
         src
+        allowfullscreen
         frameborder='0'
         allowfullscreen></iframe>
     </div>
@@ -71,18 +72,18 @@ import coverSVG from '../assets/undraw/capa-ketzim.svg'
   cards.forEach((card) => {
     const cardHtml = `
           <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 flex flex-col md:flex-row md:items-center relative p-4 md:p-6 md:w-96">
-              <div class="flex-shrink-0 w-full md:w-40 h-40 md:h-auto overflow-hidden rounded-full bg-gray-300 relative">
-                  <iframe class="w-full h-full object-cover rounded-full border border-gray-200" src="${card.video_src}" frameborder="0" allowfullscreen onclick="openModal('${card.video_src}')"></iframe>
-                  <button class="absolute inset-0 flex items-center justify-center w-full h-full bg-black bg-opacity-50 transition-opacity duration-300 hover:bg-opacity-70 rounded-full playButton" data-src="${card.video_src}">
-                      <svg class="w-12 h-12 text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z" />
+            <div class="flex-shrink-0 w-full md:w-40 h-40 md:h-auto overflow-hidden rounded-full bg-gray-300 relative">
+              <iframe class="w-full h-full object-cover rounded-full border border-gray-200 inset-0" src="${card.video_src}" frameborder="0" allowfullscreen></iframe>
+              <button class="absolute inset-0 flex items-center justify-center w-full h-full bg-black bg-opacity-50 transition-opacity duration-300 hover:bg-opacity-70 rounded-full playButton" data-src="${card.video_src}">
+                <svg class="w-12 h-12 text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
                       </svg>
                   </button>
               </div>
               <div class="flex-1 ml-4">
                   <h1 class="text-2xl font-bold text-green-600 hover:underline mb-2">${card.title}</h1>
                   <p class="text-gray-500 text-base mb-3">${card.description}</p>
-                  <a href="${card.link}" target="_blank" class="inline-block bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-800">Iniciar</a>
+                  <a href="${card.link}" target="_blank" class="inline-block bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-800 absolute bottom-4 right-4">Iniciar</a>
               </div>
           </div>
       `
