@@ -42,33 +42,32 @@ const features = [
         dos clientes na área da construção civil e reformas.
       </p>
     </div>
-</div>
-    <div class='mt-10'>
-      <dl class='space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0'>
-        {
-          features.map((feature) => (
-            <div class='relative'>
-              <dt>
-                <div class='absolute flex h-12 w-12 items-center justify-center rounded-md bg-green-500 text-white dark:bg-green-400 dark:text-black'>
-                  <Icon
-                    class='h-6 w-6'
-                    aria-hidden='true'
-                    pack='heroicons-outline'
-                    name={feature.icon}
-                  />
-                </div>
-                <p class='ml-16 text-lg font-medium leading-6 text-gray-900 dark:text-gray-200'>
-                  {feature.name}
-                </p>
-              </dt>
-              <dd class='ml-16 mt-2 text-justify text-base text-gray-600 dark:text-gray-400'>
-                {feature.description}
-              </dd>
-            </div>
-          ))
-        }
-      </dl>
-    </div>
+  
+  <div class='mt-10'>
+    <dl class='space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0'>
+      {
+        features.map((feature) => (
+          <div class='relative'>
+            <dt>
+              <div class='absolute flex h-12 w-12 items-center justify-center rounded-md bg-green-500 text-white dark:bg-green-400 dark:text-black'>
+                <Icon
+                  class='h-6 w-6'
+                  aria-hidden='true'
+                  pack='heroicons-outline'
+                  name={feature.icon}
+                />
+              </div>
+              <p class='ml-16 text-lg font-medium leading-6 text-gray-900 dark:text-gray-200'>
+                {feature.name}
+              </p>
+            </dt>
+            <dd class='ml-16 mt-2 text-justify text-base text-gray-600 dark:text-gray-400'>
+              {feature.description}
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
   </div>
 </div>
 
@@ -86,7 +85,8 @@ const features = [
   <div class='flex justify-center'>
     <div class='p-4'>
       <iframe
-        width='100%'
+      width='850'
+      height='515'
         src='https://www.youtube.com/embed/6VydtOBK_qQ?si=bWiPzBWeGPkllBZC&start=5'
         title='YouTube video player'
         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
