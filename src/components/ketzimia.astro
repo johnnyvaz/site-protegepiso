@@ -3,13 +3,16 @@ import operacional from '../assets/cards-ketzim/operacional.png'
 import marketing from '../assets/cards-ketzim/marketing.png'
 import rh from '../assets/cards-ketzim/rh.png'
 import ti from '../assets/cards-ketzim/ti.png'
+import ketvi from '../assets/video-ketzim/ketvi.mp4'
+import coverSVG from '../assets/undraw/capa-ketzim.svg'
 ---
 
 <main class='container mx-auto px-4 py-20'>
-  <div id='cardContainer' class='grid grid-cols-1 gap-8 md:grid-cols-2'></div>
+  <div class='flex justify-center'>
+    <div id='cardContainer' class='grid grid-cols-1 gap-8 md:grid-cols-2 mx-auto'></div>
+  </div>
 </main>
 
-<!-- Modal -->
 <div
   id='videoModal'
   class='fixed inset-0 flex hidden items-center justify-center bg-black bg-opacity-75'
@@ -32,32 +35,36 @@ import ti from '../assets/cards-ketzim/ti.png'
 </div>
 
 <script>
+  
+  const ketvi = 'src/assets/video-ketzim/ketvi.mp4';
+
   const cards = [
     {
       title: 'Marketing',
       description: 'Inteligência Artificial de Marketing',
       link: 'https://dify.ketzim.com/chat/HVCktAY5xVfLTF2L',
-      video_src: 'https://youtu.be/6VydtOBK_qQ?si=YeKIkaVBIBWlZ23L'
+      video_src: ketvi
     },
     {
       title: 'Administrativo',
       description: 'Inteligência Artificial de Administração',
       link: 'https://dify.ketzim.com/chat/7KZSTSqgnzLR7ho8',
-      video_src: 'https://youtu.be/6VydtOBK_qQ?si=YeKIkaVBIBWlZ23L'
+      video_src: ketvi
     },
     {
       title: 'Auditoria',
       description: 'Inteligência Artificial de Auditoria',
       link: 'https://dify.ketzim.com/chat/yZlI3VMthI5mHkZs',
-      video_src: 'https://youtu.be/6VydtOBK_qQ?si=YeKIkaVBIBWlZ23L'
+      video_src: ketvi
     },
     {
       title: 'Treinamento',
       description: 'Inteligência Artificial para Treinamento de Franqueados',
       link: 'https://dify.ketzim.com/chat/oTJ87fpYGak0SFuq',
-      video_src: 'https://youtu.be/6VydtOBK_qQ?si=YeKIkaVBIBWlZ23L'
+      video_src: ketvi
     }
-  ]
+  ];
+
 
   const cardContainer = document.getElementById('cardContainer')
 
@@ -73,7 +80,7 @@ import ti from '../assets/cards-ketzim/ti.png'
                   </button>
               </div>
               <div class="flex-1 ml-4">
-                  <h1 class="text-2xl font-bold text-black hover:underline mb-2">${card.title}</h1>
+                  <h1 class="text-2xl font-bold text-green-600 hover:underline mb-2">${card.title}</h1>
                   <p class="text-gray-500 text-base mb-3">${card.description}</p>
                   <a href="${card.link}" target="_blank" class="inline-block bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-800">Iniciar</a>
               </div>
@@ -85,6 +92,7 @@ import ti from '../assets/cards-ketzim/ti.png'
   const modal = document.getElementById('videoModal')
   const modalVideo = document.getElementById('modalVideo')
   const closeModal = document.getElementById('closeModal')
+
 
   function openModal(videoSrc) {
     modalVideo.src = videoSrc
