@@ -33,19 +33,16 @@ const features = [
 <div class='bg-gray-100 py-12 dark:bg-gray-800'>
   <div class='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
     <div class='lg:text-center'>
-      <p
-        class='mt-2 text-3xl font-extrabold leading-8 tracking-tight text-green-900 dark:text-gray-100 sm:text-4xl'
-      >
+      <p class='mt-2 text-3xl font-extrabold leading-8 tracking-tight text-green-900 dark:text-gray-100 sm:text-4xl'>
         INOVADOR E INTELIGENTE
       </p>
-      <p class='text-black-600 mt-4 max-w-xl text-sm font-extrabold dark:text-gray-300 lg:mx-auto'>
-        Desenvolvidos com base em tecnologia avançada e um profundo conhecimento das necessidades
-        dos clientes na área da construção civil e reformas.
+      <p class='text-gray-600 mt-4 max-w-xl text-base font-semibold dark:text-gray-300 lg:mx-auto'>
+        Desenvolvidos com base em tecnologia avançada e um profundo conhecimento das necessidades dos clientes na área da construção civil e reformas.
       </p>
     </div>
   </div>
   <div class='mt-10'>
-    <dl class='space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0'>
+    <dl class='space-y-20 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0'>
       {
         features.map((feature) => (
           <div class='relative'>
@@ -58,7 +55,7 @@ const features = [
                   name={feature.icon}
                 />
               </div>
-              <p class='ml-16 text-lg font-medium leading-6 text-gray-900 dark:text-gray-200'>
+              <p class='ml-16 text-lg font-medium leading-4 text-gray-900 dark:text-gray-200'>
                 {feature.name}
               </p>
             </dt>
@@ -75,14 +72,14 @@ const features = [
 <!-- Título do vídeo -->
 <div class='rounded-lg bg-gray-50 p-5 shadow-lg dark:bg-black'>
   <h2
-    class='mb-8 text-center text-4xl font-extrabold tracking-tight text-green-900 dark:text-gray-300 sm:text-4xl'
+    class='mb-8 text-center text-4xl font-extrabold tracking-tight text-green-900 sm:text-4xl dark:text-gray-300'
   >
     <span class='block dark:text-white'>VÍDEO INSTITUCIONAL</span>
   </h2>
 </div>
 
 <div class='texte-center mx-auto mb-8 max-w-screen-md'>
-  <div class='flex justify-center'>
+  <div class='flex justify-flex'>
     <img src='' alt='' />
   </div>
 </div>
@@ -90,12 +87,7 @@ const features = [
 <div class='relative mx-auto mb-8 max-w-screen-md text-center'>
   <div class='flex justify-center'>
     <div class='relative p-4'>
-      <img
-        src={elo.src}
-        alt='Descrição da imagem'
-        width='100%'
-        class='rounded-lg'
-      />
+      <img src={elo.src} alt='Descrição da imagem' width='100%' class='rounded-lg' />
       <a
         href='https://www.youtube.com/embed/6VydtOBK_qQ?si=bWiPzBWeGPkllBZC&start=5'
         target='_blank'
