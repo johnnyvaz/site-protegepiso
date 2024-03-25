@@ -5,15 +5,22 @@ import { SiteMetadata } from '../config'
 import coverSVG from '../assets/capa-protege/capa.svg'
 import socialImage from '../assets/undraw/undraw_contact_us.png'
 
+const { cookies, redirect } = Astro
+
+const accessToken = cookies.get('sb-access-token')
+const refreshToken = cookies.get('sb-refresh-token')
+
+if (accessToken && refreshToken) {
+  return redirect('/ketzim')
+}
+
 const frontmatter = {
-  title: 'Registro',
-  description:
-    'Cadastro de acesso na área restrita.',
+  title: 'Entrar',
+  description: 'Entrar na área restrita.',
   coverSVG: coverSVG,
   socialImage: socialImage,
   publishDate: SiteMetadata.buildTime
 }
-
 ---
 
 <Base frontmatter={frontmatter}>
@@ -28,8 +35,13 @@ const frontmatter = {
   <main>
     <section class='mx-auto mb-20 max-w-7xl text-gray-800 dark:text-gray-100'>
       <div class='block rounded-lg bg-white p-10 shadow-md lg:my-8 dark:bg-gray-800'>
-        <h1 class='mb-5 text-2xl font-bold'>Cadastrar na área restrita</h1>
-        <form action='/api/auth/register' method='post' class='space-y-6'>
+        <h1 class='mb-5 text-2xl font-bold'>Entrar na área restrita</h1>
+        <p class='mb-6'>
+          Novo aqui? <a
+            href='/register'
+            class='text-blue-500 hover:text-blue-700 dark:hover:text-blue-400'>Pagina para criar acesso</a>
+        </p>
+        <form action='/api/auth/signin' method='post' class='space-y-6'>
           <div>
             <label for='email' class='block text-sm font-medium text-gray-700 dark:text-gray-200'
               >Email</label
@@ -55,7 +67,7 @@ const frontmatter = {
           <button
             type='submit'
             class='flex w-full justify-center rounded-md border border-transparent bg-blue-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:hover:bg-blue-600'
-            >Cadastrar</button
+            >Acessar</button
           >
         </form>
       </div>
