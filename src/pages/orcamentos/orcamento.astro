@@ -1,0 +1,119 @@
+---
+import type { Frontmatter } from '../../config'
+import { SiteMetadata } from '../../config'
+import Impresso from '../../layouts/impresso.astro'
+import PageHero from '../../components/pagehero.astro'
+import { supabase } from '../../lib/supabase'
+
+const { cookies, redirect } = Astro
+
+const accessToken = cookies.get('sb-access-token')
+const refreshToken = cookies.get('sb-refresh-token')
+
+if (!accessToken || !refreshToken) {
+  return redirect('/signin')
+}
+
+const { data, error } = await supabase.auth.setSession({
+  refresh_token: refreshToken.value,
+  access_token: accessToken.value
+})
+
+if (error) {
+  cookies.delete('sb-access-token', {
+    path: '/'
+  })
+  cookies.delete('sb-refresh-token', {
+    path: '/'
+  })
+
+  return redirect('/signin')
+}
+
+const email = data?.user?.email
+
+// Importe componentes e CSS aqui
+import { StyleSheet } from '@react-pdf/renderer';
+
+  const styles = {
+    page: 'flex flex-col p-8',
+    header: 'text-sm mb-5',
+    title: 'text-2xl text-center mb-5',
+    content: 'text-sm mb-2.5',
+    item: 'flex justify-between mb-1.25',
+    itemHeader: 'flex justify-between bg-gray-200 p-1.25',
+    footer: 'text-xs text-center mt-6 pt-2.5 border-t border-gray-200',
+    section: 'mb-2.5',
+  };
+
+---
+
+<Impresso>
+  
+  <html>
+  <head>
+    <title>Modelo Document</title>
+    <style>
+      /* Aqui você colocaria o CSS correspondente convertido do StyleSheet */
+    </style>
+  </head>
+  <body>
+    <div class={styles.page}>
+      <div class={styles.header}>
+        <p>CLIENTE:</p>
+        <p>ENDEREÇO:</p>
+        <p>OBRA:</p>
+        <p>CONTATO:</p>
+        <p>VENDA / MEDIÇÃO Nº NT</p>
+      </div>
+      <div class={styles.title}>
+        <p>RD5 Engenharia</p>
+      </div>
+      <div class={styles.section}>
+        <div class={styles.itemHeader}>
+          <span>ITEM</span>
+          <span>DESCRIÇÃO</span>
+          <span>PAVIMENTO</span>
+          <span>LOCALIZAÇÃO</span>
+          <span>QTD.</span>
+          <span>VALOR UN.</span>
+          <span>TOTAL</span>
+        </div>
+        <div class={styles.item}>
+          <span>1</span>
+          <span>Proteção de Piso</span>
+          <span>vaanda</span>
+          <span>3500 m²</span>
+          <span>R$000</span>
+          <span>R$000</span>
+          <span>R$000</span>
+        </div>
+      </div>
+      <div class={styles.content}>
+        <p>Incluso no valor do orçamento:</p>
+        <p>- Frete de entrega e retirada do material</p>
+        <p>- Manutenção periódica</p>
+        <p>Demonstração - 15 dias</p>
+      </div>
+      <div class={styles.content}>
+        <p>CONDIÇÕES GERAIS</p>
+        <p>- Mão de Obra de instalação</p>
+        <p>- Retirada da proteção no término da obra</p>
+        <p>- Período da Locação: até dias</p>
+      </div>
+      <div class={styles.content}>
+        <p>CONDIÇÕES DE PAGAMENTO</p>
+        <p>403 - Cora SCD - PIX CNPJ 53731070000186 /</p>
+        <p>Agência: 0001 / Conta: 4655961-5</p>
+        <p>FGR Soluções Ltda.</p>
+        <p>CNPJ: 53.731.070/0001-86</p>
+      </div>
+      <div class={styles.footer}>
+        <p>Responsável: Protege Piso Natal Natal 11/03/2024</p>
+      </div>
+    </div>
+  </body>
+  </html>
+  
+
+</Impresso>

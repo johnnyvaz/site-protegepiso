@@ -1,0 +1,47 @@
+---
+import type { Frontmatter } from '../config'
+import SEO from '../components/seo.astro'
+import Header from '../components/header.astro'
+import Footer from '../components/footer.astro'
+import React from 'react'
+import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
+
+const styles = {
+  section: 'm-2.5 p-2.5 grow'
+}
+---
+
+<!doctype html>
+<html lang='pt-br'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta
+      http-equiv='Content-Security-Policy'
+      content="default-src * 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
+    />
+    <meta http-equiv='Referrer-Policy' content='no-referrer, strict-origin-when-cross-origin' />
+    <meta name='viewport' content='width=device-width' />
+ 
+    <!-- <ViewTransitions /> -->
+    <style is:inline>
+      
+    </style>
+  
+    <slot name='in-head' />
+  </head>
+  <body class='dark:bg-gray-900'>
+    <Page size='A4' class="flex flex-row bg-gray-200 border-2 border-red-800">
+      <div class={styles.header}>
+        <p>CLIENTE:</p>
+        <p>ENDEREÇO:</p>
+        <p>OBRA:</p>
+        <p>CONTATO:</p>
+        <p>VENDA / MEDIÇÃO Nº NT</p>
+      </div>
+    <!-- <Header /> -->
+    <slot />
+    <slot name='before-footer' />
+    <!-- <Footer /> -->
+  </Page>
+  </body>
+</html>
