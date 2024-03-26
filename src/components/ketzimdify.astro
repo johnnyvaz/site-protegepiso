@@ -1,0 +1,65 @@
+---
+import ketvi from '/mp4/ketvi.mp4'
+
+const cards = [
+  {
+    title: 'Marketing',
+    description: 'Inteligência Artificial de Marketing',
+    link: 'https://marketing-ia.ketzim.com',
+    netlify: 'ketzim-marketing.netlify.app',
+    video_src: ketvi
+  },
+  {
+    title: 'Administrativo',
+    description: 'Inteligência Artificial de Administração',
+    link: 'https://adm-ia.ketzim.com',
+    netlify: 'https://ketzim-adm.netlify.app',
+    video_src: ketvi
+  },
+  {
+    title: 'Auditoria',
+    description: 'Inteligência Artificial de Auditoria',
+    link: 'https://auditoria-ia.ketzim.com',
+    netlify: 'ketzim-auditoria.netlify.app',
+    video_src: ketvi
+  },
+  {
+    title: 'Treinamento',
+    description: 'Inteligência Artificial para Treinamento de Franqueados',
+    link: 'https://treinamento-ia.ketzim.com',
+    netlify: 'ketzim-treinamento.netlify.app',
+    video_src: ketvi
+  }
+]
+---
+
+<main class='container mx-auto px-4 py-20'>
+  <div class='flex justify-center'>
+    <div id='cardContainer' class='mx-auto grid grid-cols-1 gap-8 md:grid-cols-2'>
+      {
+        cards.map((card) => (
+          <div class='relative flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white p-4 shadow-md md:w-96 md:flex-row md:items-center md:p-6'>
+            <div class='relative h-40 w-full flex-shrink-0 overflow-hidden rounded-full bg-gray-300 md:h-auto md:w-40'>
+              <video
+                class='h-full w-full rounded-full border border-gray-200 object-cover'
+                controls
+                src={card.video_src}
+              />
+            </div>
+            <div class='ml-4 flex-1'>
+              <h1 class='mb-2 text-2xl font-bold text-green-600 hover:underline'>{card.title}</h1>
+              <p class='mb-3 text-base text-gray-500'>{card.description}</p>
+              <a
+                href={card.link}
+                target='_blank'
+                class='inline-block rounded-md bg-green-600 px-4 py-2 text-white hover:bg-green-800'
+              >
+                Iniciar
+              </a>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</main>
