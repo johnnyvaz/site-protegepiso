@@ -11,6 +11,7 @@ import remarkPlantUML from '@akebifiky/remark-simple-plantuml';
 import { remarkReadingTime } from './remark-plugins/remark-reading-time.mjs';
 import { remarkDiagram } from './remark-plugins/remark-diagram.mjs';
 import react from '@astrojs/react';
+import netlify from '@astrojs/netlify';
 
 
 import markdoc from "@astrojs/markdoc";
@@ -41,4 +42,6 @@ export default defineConfig({
     },
   },
   scopedStyleStrategy: "where",
+  output: 'server',
+  adapter: netlify(),
 });

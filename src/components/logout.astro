@@ -1,0 +1,45 @@
+---
+import { supabase } from '../lib/supabase'
+
+const { cookies, redirect } = Astro
+
+const accessToken = cookies.get('sb-access-token')
+const refreshToken = cookies.get('sb-refresh-token')
+
+let email = null
+
+if (accessToken && refreshToken) {
+  const { data, error } = await supabase.auth.setSession({
+    refresh_token: refreshToken.value,
+    access_token: accessToken.value
+  })
+
+  if (error) {
+    cookies.delete('sb-access-token', { path: '/' })
+    cookies.delete('sb-refresh-token', { path: '/' })
+    redirect('/')
+  } else {
+    email = data?.user?.email
+  }
+}
+---
+
+<div>
+  {
+    email ? (
+      <div>
+        <form action='/api/auth/signout'>
+          <button
+            type='submit'
+            class='inline-flex items-center justify-center rounded-md p-2 text-green-600 hover:bg-green-200 hover:text-green-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-300 dark:text-green-300 dark:hover:bg-green-800 dark:hover:text-green-300 dark:focus:ring-green-800'
+          >
+            {' '}
+            {email} - sair
+          </button>
+        </form>
+      </div>
+    ) : (
+      ''
+    )
+  }
+</div>

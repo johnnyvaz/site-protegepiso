@@ -43,8 +43,7 @@ export const NavigationLinks = [
   { name: 'Sobre Nós', href: 'sobre' },
   { name: 'Blog', href: 'blog' },
   { name: 'Contatos', href: 'contato' },
- { name: 'Ketzim IA', href: 'ketzim' },
-  // { name: 'Franquia', href: 'doc/introduction' }
+  { name: 'Ketzim IA', href: 'ketzim' }
 ]
 
 export const PAGE_SIZE = 6
